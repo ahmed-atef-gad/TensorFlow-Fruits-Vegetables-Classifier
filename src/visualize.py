@@ -48,20 +48,21 @@ def plot_sample_images(df: pd.DataFrame, image_size: tuple[int, int], output_pat
 
 def plot_training_curves(history, output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    history_df = pd.DataFrame(history.history)
+    history_df = history if isinstance(history, pd.DataFrame) else pd.DataFrame(history.history)
+    epoch_values = history_df["epoch"] if "epoch" in history_df.columns else range(1, len(history_df) + 1)
 
     plt.figure(figsize=(14, 5))
     plt.subplot(1, 2, 1)
-    plt.plot(history_df["accuracy"], label="Training accuracy")
-    plt.plot(history_df["val_accuracy"], label="Validation accuracy")
+    plt.plot(epoch_values, history_df["accuracy"], label="Training accuracy")
+    plt.plot(epoch_values, history_df["val_accuracy"], label="Validation accuracy")
     plt.title("Accuracy Curve")
     plt.xlabel("Epoch")
     plt.ylabel("Accuracy")
     plt.legend()
 
     plt.subplot(1, 2, 2)
-    plt.plot(history_df["loss"], label="Training loss")
-    plt.plot(history_df["val_loss"], label="Validation loss")
+    plt.plot(epoch_values, history_df["loss"], label="Training loss")
+    plt.plot(epoch_values, history_df["val_loss"], label="Validation loss")
     plt.title("Loss Curve")
     plt.xlabel("Epoch")
     plt.ylabel("Loss")

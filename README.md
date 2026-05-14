@@ -101,6 +101,8 @@ The training script prints the full Keras model summary and a layer-by-layer par
 - Callbacks:
   - EarlyStopping on validation loss
   - ModelCheckpoint on validation accuracy
+  - BackupAndRestore for interrupted training recovery
+  - CSVLogger for epoch-by-epoch history
 
 ## How to Run
 
@@ -131,6 +133,37 @@ Optional training arguments:
 python -m src.train --epochs 40 --batch-size 32 --learning-rate 0.0001 --image-size 128
 ```
 
+If the terminal disconnects or training is interrupted, run the same command again. `BackupAndRestore` will try to continue from the last completed epoch:
+
+```powershell
+python -m src.train --epochs 50
+```
+
+You can also resume manually from a saved checkpoint:
+
+```powershell
+python -m src.train --epochs 50 --resume-from best
+python -m src.train --epochs 50 --resume-from last
+```
+
+For CPU training, image loading can run in background workers:
+
+```powershell
+python -m src.train --epochs 50 --workers 2
+```
+
+If the machine is stable and you want to try process-based loading:
+
+```powershell
+python -m src.train --epochs 50 --workers 2 --use-multiprocessing
+```
+
+On Windows, if multiprocessing causes instability, go back to:
+
+```powershell
+python -m src.train --epochs 50 --workers 1
+```
+
 Evaluate the best saved model:
 
 ```powershell
@@ -154,7 +187,9 @@ jupyter notebook notebooks/fruits_vegetables_classification.ipynb
 Training creates:
 
 - `models/best_fruits_vegetables_cnn.h5`
+- `models/last_fruits_vegetables_cnn.h5`
 - `models/final_fruits_vegetables_cnn.h5`
+- `models/training_backup/`
 - `models/class_indices.json`
 - `models/train_split.csv`
 - `models/val_split.csv`
@@ -163,6 +198,7 @@ Training creates:
 - `plots/sample_images.png`
 - `plots/training_curves.png`
 - `plots/training_history.csv`
+- `plots/training_log.csv`
 
 Evaluation creates:
 

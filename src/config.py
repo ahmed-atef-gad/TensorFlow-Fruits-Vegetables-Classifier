@@ -20,7 +20,9 @@ EPOCHS = 30
 LEARNING_RATE = 1e-4
 
 BEST_MODEL_PATH = MODELS_DIR / "best_fruits_vegetables_cnn.h5"
+LAST_MODEL_PATH = MODELS_DIR / "last_fruits_vegetables_cnn.h5"
 FINAL_MODEL_PATH = MODELS_DIR / "final_fruits_vegetables_cnn.h5"
+BACKUP_DIR = MODELS_DIR / "training_backup"
 CLASS_INDICES_PATH = MODELS_DIR / "class_indices.json"
 TRAIN_SPLIT_PATH = MODELS_DIR / "train_split.csv"
 VAL_SPLIT_PATH = MODELS_DIR / "val_split.csv"
