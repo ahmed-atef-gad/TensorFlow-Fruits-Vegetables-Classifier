@@ -82,6 +82,18 @@ def history_dataframe(history, csv_log_path: Path) -> pd.DataFrame:
     return pd.DataFrame(history.history)
 
 
+def resume_epoch_from_log(csv_log_path: Path) -> int:
+    """Return the next epoch index after the latest logged epoch."""
+    if not csv_log_path.exists():
+        return 0
+
+    csv_history = pd.read_csv(csv_log_path)
+    if "epoch" not in csv_history.columns or csv_history.empty:
+        return 0
+
+    return int(csv_history["epoch"].max()) + 1
+
+
 def main() -> None:
     args = parse_args()
     image_size = (args.image_size, args.image_size)
@@ -122,11 +134,15 @@ def main() -> None:
         resume_path = LAST_MODEL_PATH
 
     if resume_path is not None and resume_path.exists():
+        resume_epoch = resume_epoch_from_log(resumable_log_path)
         print(f"\nResuming from checkpoint: {resume_path}")
+        if resume_epoch > 0:
+            print(f"Continuing from epoch {resume_epoch + 1}")
         model = tf.keras.models.load_model(resume_path)
     else:
         if resume_path is not None:
             print(f"\nCheckpoint not found at {resume_path}. Starting a new model.")
+        resume_epoch = 0
         model = build_cnn_model(
             input_shape=(image_size[0], image_size[1], 3),
             num_classes=len(class_indices),
@@ -168,7 +184,8 @@ def main() -> None:
     history = model.fit(
         train_sequence,
         validation_data=val_sequence,
-        epochs=args.epochs,
+        initial_epoch=resume_epoch,
+        epochs=resume_epoch + args.epochs,
         callbacks=callbacks,
         verbose=1,
         workers=args.workers,

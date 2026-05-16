@@ -146,6 +146,8 @@ python -m src.train --epochs 50 --resume-from best
 python -m src.train --epochs 50 --resume-from last
 ```
 
+When you use `--resume-from last`, the value passed to `--epochs` is treated as the number of additional epochs to train after the last logged epoch.
+
 For CPU training, image loading can run in background workers:
 
 ```powershell
