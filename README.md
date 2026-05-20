@@ -178,6 +178,16 @@ Predict a single image:
 python -m src.predict "dataset/Fruits/FreshApple/freshApple (1).jpg"
 ```
 
+Run the local web interface:
+
+```powershell
+python app.py
+```
+
+Then open `http://127.0.0.1:5000`. The website lets you upload an image for prediction,
+start training, and run evaluation. If you leave an argument field empty, the app uses
+the same default values defined in `src/config.py` and the command-line parsers.
+
 Run the notebook:
 
 ```powershell

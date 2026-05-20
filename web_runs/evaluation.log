@@ -1,0 +1,194 @@
+$ D:\cse\4\2\ML\project\.venv\Scripts\python.exe -m src.evaluate --model-path D:\cse\4\2\ML\project\models\best_fruits_vegetables_cnn.h5 --batch-size 32 --image-size 128
+
+2026-05-20 11:24:58.563282: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-20 11:24:59.731021: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1616] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3478 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+2026-05-20 11:25:05.451440: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2026-05-20 11:25:10.712911: I tensorflow/stream_executor/cuda/cuda_blas.cc:1614] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+
+ 1/57 [..............................] - ETA: 6:59 - loss: 0.1893 - accuracy: 0.8750
+ 3/57 [>.............................] - ETA: 2s - loss: 0.2623 - accuracy: 0.9062  
+ 4/57 [=>............................] - ETA: 3s - loss: 0.3293 - accuracy: 0.8984
+ 5/57 [=>............................] - ETA: 6s - loss: 0.3548 - accuracy: 0.9000
+ 6/57 [==>...........................] - ETA: 8s - loss: 0.3418 - accuracy: 0.9062
+ 7/57 [==>...........................] - ETA: 8s - loss: 0.3747 - accuracy: 0.8973
+ 8/57 [===>..........................] - ETA: 7s - loss: 0.3661 - accuracy: 0.8984
+ 9/57 [===>..........................] - ETA: 7s - loss: 0.3641 - accuracy: 0.8958
+10/57 [====>.........................] - ETA: 6s - loss: 0.3779 - accuracy: 0.8938
+11/57 [====>.........................] - ETA: 6s - loss: 0.3636 - accuracy: 0.8977
+12/57 [=====>........................] - ETA: 6s - loss: 0.4195 - accuracy: 0.8854
+13/57 [=====>........................] - ETA: 6s - loss: 0.4444 - accuracy: 0.8774
+14/57 [======>.......................] - ETA: 5s - loss: 0.4498 - accuracy: 0.8795
+15/57 [======>.......................] - ETA: 5s - loss: 0.4278 - accuracy: 0.8854
+16/57 [=======>......................] - ETA: 5s - loss: 0.4211 - accuracy: 0.8848
+17/57 [=======>......................] - ETA: 5s - loss: 0.4310 - accuracy: 0.8787
+18/57 [========>.....................] - ETA: 5s - loss: 0.4266 - accuracy: 0.8802
+19/57 [=========>....................] - ETA: 5s - loss: 0.4223 - accuracy: 0.8799
+20/57 [=========>....................] - ETA: 4s - loss: 0.4246 - accuracy: 0.8766
+21/57 [==========>...................] - ETA: 4s - loss: 0.4234 - accuracy: 0.8765
+22/57 [==========>...................] - ETA: 4s - loss: 0.4210 - accuracy: 0.8764
+23/57 [===========>..................] - ETA: 4s - loss: 0.4228 - accuracy: 0.8736
+24/57 [===========>..................] - ETA: 4s - loss: 0.4186 - accuracy: 0.8737
+25/57 [============>.................] - ETA: 4s - loss: 0.4207 - accuracy: 0.8725
+26/57 [============>.................] - ETA: 4s - loss: 0.4285 - accuracy: 0.8702
+27/57 [=============>................] - ETA: 4s - loss: 0.4225 - accuracy: 0.8727
+28/57 [=============>................] - ETA: 3s - loss: 0.4185 - accuracy: 0.8761
+29/57 [==============>...............] - ETA: 3s - loss: 0.4206 - accuracy: 0.8761
+30/57 [==============>...............] - ETA: 3s - loss: 0.4270 - accuracy: 0.8740
+31/57 [===============>..............] - ETA: 3s - loss: 0.4315 - accuracy: 0.8730
+32/57 [===============>..............] - ETA: 3s - loss: 0.4351 - accuracy: 0.8721
+33/57 [================>.............] - ETA: 3s - loss: 0.4339 - accuracy: 0.8722
+34/57 [================>.............] - ETA: 3s - loss: 0.4388 - accuracy: 0.8713
+35/57 [=================>............] - ETA: 2s - loss: 0.4351 - accuracy: 0.8723
+36/57 [=================>............] - ETA: 2s - loss: 0.4289 - accuracy: 0.8741
+37/57 [==================>...........] - ETA: 2s - loss: 0.4248 - accuracy: 0.8750
+38/57 [===================>..........] - ETA: 2s - loss: 0.4230 - accuracy: 0.8766
+39/57 [===================>..........] - ETA: 2s - loss: 0.4154 - accuracy: 0.8782
+40/57 [====================>.........] - ETA: 2s - loss: 0.4098 - accuracy: 0.8789
+41/57 [====================>.........] - ETA: 2s - loss: 0.4114 - accuracy: 0.8796
+42/57 [=====================>........] - ETA: 2s - loss: 0.4070 - accuracy: 0.8810
+43/57 [=====================>........] - ETA: 1s - loss: 0.4046 - accuracy: 0.8823
+44/57 [======================>.......] - ETA: 1s - loss: 0.4080 - accuracy: 0.8800
+45/57 [======================>.......] - ETA: 1s - loss: 0.4206 - accuracy: 0.8771
+46/57 [=======================>......] - ETA: 1s - loss: 0.4136 - accuracy: 0.8798
+47/57 [=======================>......] - ETA: 1s - loss: 0.4160 - accuracy: 0.8797
+48/57 [========================>.....] - ETA: 1s - loss: 0.4168 - accuracy: 0.8789
+49/57 [========================>.....] - ETA: 1s - loss: 0.4118 - accuracy: 0.8807
+50/57 [=========================>....] - ETA: 0s - loss: 0.4094 - accuracy: 0.8813
+51/57 [=========================>....] - ETA: 0s - loss: 0.4056 - accuracy: 0.8830
+52/57 [==========================>...] - ETA: 0s - loss: 0.4088 - accuracy: 0.8828
+53/57 [==========================>...] - ETA: 0s - loss: 0.4052 - accuracy: 0.8833
+54/57 [===========================>..] - ETA: 0s - loss: 0.4106 - accuracy: 0.8814
+55/57 [===========================>..] - ETA: 0s - loss: 0.4128 - accuracy: 0.8813
+56/57 [============================>.] - ETA: 0s - loss: 0.4097 - accuracy: 0.8806
+57/57 [==============================] - ETA: 0s - loss: 0.4106 - accuracy: 0.8794
+57/57 [==============================] - 16s 150ms/step - loss: 0.4106 - accuracy: 0.8794
+
+ 1/57 [..............................] - ETA: 9s
+ 2/57 [>.............................] - ETA: 9s
+ 3/57 [>.............................] - ETA: 6s
+ 4/57 [=>............................] - ETA: 5s
+ 5/57 [=>............................] - ETA: 6s
+ 6/57 [==>...........................] - ETA: 7s
+ 7/57 [==>...........................] - ETA: 6s
+ 8/57 [===>..........................] - ETA: 6s
+ 9/57 [===>..........................] - ETA: 6s
+10/57 [====>.........................] - ETA: 5s
+11/57 [====>.........................] - ETA: 5s
+12/57 [=====>........................] - ETA: 5s
+13/57 [=====>........................] - ETA: 5s
+14/57 [======>.......................] - ETA: 5s
+15/57 [======>.......................] - ETA: 4s
+16/57 [=======>......................] - ETA: 5s
+17/57 [=======>......................] - ETA: 4s
+18/57 [========>.....................] - ETA: 4s
+19/57 [=========>....................] - ETA: 4s
+20/57 [=========>....................] - ETA: 4s
+21/57 [==========>...................] - ETA: 4s
+22/57 [==========>...................] - ETA: 4s
+23/57 [===========>..................] - ETA: 4s
+24/57 [===========>..................] - ETA: 4s
+25/57 [============>.................] - ETA: 4s
+26/57 [============>.................] - ETA: 4s
+27/57 [=============>................] - ETA: 4s
+28/57 [=============>................] - ETA: 4s
+29/57 [==============>...............] - ETA: 3s
+30/57 [==============>...............] - ETA: 3s
+31/57 [===============>..............] - ETA: 3s
+32/57 [===============>..............] - ETA: 3s
+33/57 [================>.............] - ETA: 3s
+34/57 [================>.............] - ETA: 3s
+35/57 [=================>............] - ETA: 3s
+36/57 [=================>............] - ETA: 2s
+37/57 [==================>...........] - ETA: 3s
+38/57 [===================>..........] - ETA: 2s
+39/57 [===================>..........] - ETA: 2s
+40/57 [====================>.........] - ETA: 2s
+41/57 [====================>.........] - ETA: 2s
+42/57 [=====================>........] - ETA: 2s
+43/57 [=====================>........] - ETA: 2s
+44/57 [======================>.......] - ETA: 1s
+45/57 [======================>.......] - ETA: 1s
+46/57 [=======================>......] - ETA: 1s
+47/57 [=======================>......] - ETA: 1s
+48/57 [========================>.....] - ETA: 1s
+49/57 [========================>.....] - ETA: 1s
+50/57 [=========================>....] - ETA: 1s
+51/57 [=========================>....] - ETA: 0s
+52/57 [==========================>...] - ETA: 0s
+53/57 [==========================>...] - ETA: 0s
+54/57 [===========================>..] - ETA: 0s
+55/57 [===========================>..] - ETA: 0s
+56/57 [============================>.] - ETA: 0s
+57/57 [==============================] - ETA: 0s
+57/57 [==============================] - 9s 155ms/step
+Test loss: 0.4106
+Test accuracy: 0.8794
+
+Classification report:
+                  precision    recall  f1-score   support
+
+      FreshApple       0.93      0.96      0.94        92
+     FreshBanana       0.96      0.92      0.94        93
+ FreshBellpepper       0.92      0.89      0.91        91
+     FreshCarrot       0.90      0.91      0.91        93
+   FreshCucumber       0.85      0.95      0.90        91
+      FreshMango       1.00      0.98      0.99        91
+     FreshOrange       0.95      0.96      0.95        92
+     FreshPotato       0.94      0.86      0.90        92
+ FreshStrawberry       0.91      0.95      0.93        91
+     FreshTomato       0.91      0.80      0.85        91
+     RottenApple       0.71      0.80      0.75        88
+    RottenBanana       0.91      0.91      0.91        86
+RottenBellpepper       0.63      0.75      0.69        89
+    RottenCarrot       0.86      0.77      0.81        87
+  RottenCucumber       0.89      0.91      0.90        89
+     RottenMango       0.92      0.85      0.88        89
+    RottenOrange       0.95      0.88      0.91        88
+    RottenPotato       0.75      0.86      0.80        88
+RottenStrawberry       0.93      0.90      0.91        89
+    RottenTomato       0.86      0.78      0.82        90
+
+        accuracy                           0.88      1800
+       macro avg       0.88      0.88      0.88      1800
+    weighted avg       0.88      0.88      0.88      1800
+
+
+Saved evaluation report to: D:\cse\4\2\ML\project\models\evaluation_report.txt
+Saved confusion matrix heatmap to: D:\cse\4\2\ML\project\plots\confusion_matrix_heatmap.png
