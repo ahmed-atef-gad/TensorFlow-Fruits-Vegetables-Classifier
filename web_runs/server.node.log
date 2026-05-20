@@ -1,0 +1,1606 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [20/May/2026 11:09:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:09] "GET /static/model-preview.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:09] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:09] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:10] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:10] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:15] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:15] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:20] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:20] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:23] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:25] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:25] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:28] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:28] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:30] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:30] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:33] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:35] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:35] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:38] "GET /static/model-preview.svg HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:38] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:38] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:38] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [20/May/2026 11:10:40] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:40] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:40] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:40] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:43] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:43] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:45] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:45] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:45] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:45] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:50] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:50] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:50] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:50] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:55] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:55] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:55] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:55] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:10:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:00] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:00] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:05] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:05] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:10] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:10] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:15] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:15] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:20] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:20] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:23] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:23] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:25] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:25] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:28] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:28] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:28] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:28] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:30] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:30] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:33] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:33] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:35] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:35] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:40] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:40] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:41] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:43] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:43] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:45] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:45] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:50] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:50] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:55] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:55] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:11:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:00] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:00] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:05] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:05] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:10] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:10] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:15] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:20] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:20] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:23] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:25] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:25] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:28] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:28] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:30] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:30] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:33] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:35] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:35] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:40] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:40] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:43] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:45] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:12:45] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:12:45] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:12:45] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:50] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:50] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:55] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:55] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:55] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:55] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:57] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:12:57] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:12:57] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:12:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:12:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:00] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:00] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:00] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:00] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:05] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:05] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:05] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:05] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:10] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:10] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:10] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:10] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:15] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:15] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:15] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:15] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:20] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:20] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:20] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:20] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:23] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:23] "GET /status/evaluate HTTP/1.1" 200 -
+2026-05-20 11:13:26.925064: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-20 11:13:30.872548: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1616] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3478 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+127.0.0.1 - - [20/May/2026 11:13:30] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:31] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:33] "GET /status/train HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:33] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:33] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:35] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:35] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:36] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:38] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:38] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:40] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:40] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:41] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:43] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:43] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:45] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:45] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:46] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:48] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:51] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:53] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:55] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:55] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:56] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:58] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:13:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:13:58] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:14:00] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:00] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:14:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:01] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:14:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:03] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:14:05] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:05] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:14:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:06] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:14:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:09] "POST /evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:10] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:14:10] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:14:10] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:14:10] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:10] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:12] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:12] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:15] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:15] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:16] "GET /status/evaluate HTTP/1.1" 200 -
+2026-05-20 11:14:17.130765: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+127.0.0.1 - - [20/May/2026 11:14:17] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:17] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:20] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:20] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:22] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:22] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:23] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:25] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:25] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:27] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:27] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:28] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:28] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:30] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:30] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:31] "GET /status/evaluate HTTP/1.1" 200 -
+2026-05-20 11:14:32.852650: I tensorflow/stream_executor/cuda/cuda_blas.cc:1614] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+127.0.0.1 - - [20/May/2026 11:14:33] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:33] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:33] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:33] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:33] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:35] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:35] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:35] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:35] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:40] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:40] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:40] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:40] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:43] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:43] "GET /status/evaluate HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [20/May/2026 11:14:52] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:55] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:14:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:00] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:05] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:05] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:10] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:10] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:12] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:12] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:13] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:15:13] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:15:13] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:15:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:15] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:15] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:20] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:20] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:23] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:23] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:25] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:25] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:28] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:28] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:28] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:28] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:30] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:30] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:33] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:33] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:35] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:35] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:40] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:40] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:41] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:43] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:43] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:45] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:45] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:50] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:50] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:55] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:55] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:15:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:00] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:00] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:04] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:05] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:05] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:10] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:10] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:14] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:14] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:15] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:15] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:16] "POST /evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:16] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:16:16] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:16:16] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:16:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:19] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:19] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:24] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:24] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:29] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:29] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:29] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:29] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:34] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:34] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:39] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:39] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:39] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:39] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:41] "GET /status/evaluate HTTP/1.1" 200 -
+2026-05-20 11:16:41.911755: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-20 11:16:44.383598: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1616] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3478 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+127.0.0.1 - - [20/May/2026 11:16:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:49] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:49] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:16:49] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:49] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:16:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:54] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:54] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:56] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:16:59] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:59] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:59] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:16:59] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:17:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:01] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:17:04] "GET /status/train HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:17:04] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:17:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:04] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:17:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:06] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:17:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:10] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:10] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:24] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:24] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:29] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:29] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:29] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:29] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:34] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:34] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:39] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:39] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:39] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:39] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:41] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:41] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:44] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:44] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:44] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:44] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:49] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:49] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:49] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:49] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:54] "GET /status/evaluate HTTP/1.1" 200 -
+2026-05-20 11:17:54.353200: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+127.0.0.1 - - [20/May/2026 11:17:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:54] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:59] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:59] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:59] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:17:59] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:02] "POST /evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:02] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:02] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:02] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:02] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:02] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:04] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:04] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:07] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:07] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:12] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:12] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:14] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:14] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:14] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:14] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:17] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:17] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:19] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:19] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:22] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:22] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:24] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:25] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:25] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:27] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:27] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:29] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:29] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:30] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:30] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:32] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:32] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:34] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:34] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:37] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:37] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:37] "POST /evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:37] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:37] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:37] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:37] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:37] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:39] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:39] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:40] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:40] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:41] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:42] "POST /evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:42] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:42] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:42] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:42] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:42] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:44] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:44] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:44] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:44] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:47] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:47] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:50] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:50] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:52] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:52] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:54] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:54] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:57] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:57] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:57] "POST /evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:57] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:57] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:57] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:18:57] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:57] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:59] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:18:59] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:00] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:00] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:04] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:05] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:05] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:10] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:10] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:19:11] "GET /status/evaluate HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [20/May/2026 11:30:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:14] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:14] "GET /status/evaluate HTTP/1.1" 200 -
+2026-05-20 11:31:16.261225: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-20 11:31:16.824831: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1616] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3478 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+127.0.0.1 - - [20/May/2026 11:31:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:16] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:31:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:18] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:31:18] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:18] "GET /static/style.css HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:31:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:19] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:31:19] "GET /artifacts/confusion-matrix?v=1779265529 HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:31:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:19] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:31:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:21] "GET /status/evaluate HTTP/1.1" 200 -
+2026-05-20 11:31:21.757861: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+127.0.0.1 - - [20/May/2026 11:31:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:24] "GET /status/evaluate HTTP/1.1" 200 -
+2026-05-20 11:31:24.621012: I tensorflow/stream_executor/cuda/cuda_blas.cc:1614] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+127.0.0.1 - - [20/May/2026 11:31:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:24] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:24] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:24] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:24] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:31:24] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:24] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:24] "GET /artifacts/confusion-matrix?v=1779265529 HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:27] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:27] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:29] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:29] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:30] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:30] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:32] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:32] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:34] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:35] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:35] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:37] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:37] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:39] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:39] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:40] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:40] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:41] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:42] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:42] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:44] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:44] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:45] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:45] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:47] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:47] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:47] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:47] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:31:49] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:49] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:31:49] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:49] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:31:50] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:50] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:31:50] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:31:50] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:31:50] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:50] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:50] "GET /artifacts/confusion-matrix?v=1779265529 HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:31:52] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:52] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:54] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:59] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:31:59] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:00] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:00] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:02] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:02] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:03] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:32:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:04] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:32:05] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:05] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:06] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:06] "GET /static/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:32:06] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:32:06] "GET /static/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:32:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:06] "GET /artifacts/confusion-matrix?v=1779265529 HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:32:07] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:07] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:14] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:14] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:19] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:23] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:24] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:28] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:28] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:29] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:29] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:31] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:33] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:34] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:39] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:39] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:41] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:41] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:43] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:44] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:44] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:49] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:49] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:54] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:59] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:32:59] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:04] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:14] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:14] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:14] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:14] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:19] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:24] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:29] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:29] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:32] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:32] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:33] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:33] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:34] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:36] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:36] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:37] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:37] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:38] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:38] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:39] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:39] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:41] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:41] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:42] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:42] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:43] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:43] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:44] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:44] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:48] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:48] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:49] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:49] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:53] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:54] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:58] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:58] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:59] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:33:59] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:03] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:03] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:04] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:08] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:08] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:13] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:13] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:14] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:14] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:16] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:16] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:18] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:18] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:19] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:21] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:21] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:23] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:23] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:24] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:24] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:26] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:26] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:27] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:27] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:28] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:28] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:34:29] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:29] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:34:31] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:31] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:34:31] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:32] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:32] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:34:32] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:32] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:32] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:32] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:32] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:34] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:34] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:34] "GET /status/evaluate HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [20/May/2026 11:34:45] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:45] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:45] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:46] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:46] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:47] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:47] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:49] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:49] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:49] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:49] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:51] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:51] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:52] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:52] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:53] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:54] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:54] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:54] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:56] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:56] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:57] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:57] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:59] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:59] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:59] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:34:59] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:01] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:01] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:02] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:02] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:03] "GET /static/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:03] "GET /static/model-preview.svg HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:35:03] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:04] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:04] "GET /artifacts/confusion-matrix?v=1779265529 HTTP/1.1" 304 -
+127.0.0.1 - - [20/May/2026 11:35:04] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:04] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:06] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:06] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:07] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:07] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:09] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:09] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:11] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:11] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:12] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:12] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:14] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:14] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:14] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:14] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:17] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:17] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:17] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:17] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:19] "GET /status/evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:19] "GET /status/train HTTP/1.1" 200 -
+127.0.0.1 - - [20/May/2026 11:35:19] "GET /status/evaluate HTTP/1.1" 200 -
+2026-05-20 11:35:20.307613: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-20 11:35:20.932578: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1616] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3478 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:35:21] "GET /status/train HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting ImageProjectiveTransformV3 cause there is no registered converter for this op.
+127.0.0.1 - - [20/May/2026 11:35:21] "GET /status/evaluate HTTP/1.1" 200 -
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting RngReadAndSkip cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting Bitcast cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting StatelessRandomUniformV2 cause there is no registered converter for this op.

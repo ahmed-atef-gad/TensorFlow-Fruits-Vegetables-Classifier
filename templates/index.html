@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fruits & Vegetables CNN</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Machine Learning Model Console</p>
+        <h1>Fruits & Vegetables CNN</h1>
+        <p class="lede">Predict one image, retrain the model, or evaluate saved checkpoints from one local web interface.</p>
+      </div>
+      <div class="hero-media" aria-hidden="true">
+        <img src="{{ url_for('static', filename='model-preview.svg') }}" alt="">
+      </div>
+    </section>
+
+    {% if error %}
+      <div class="notice error">{{ error }}</div>
+    {% endif %}
+    {% if message %}
+      <div class="notice success">{{ message }}</div>
+    {% endif %}
+
+    <nav class="tabs" aria-label="Model tasks">
+      <button class="tab-button" data-panel="predict" type="button">Predict</button>
+      <button class="tab-button" data-panel="train" type="button">Train</button>
+      <button class="tab-button" data-panel="evaluate" type="button">Evaluate</button>
+    </nav>
+
+    <section class="panel" id="predict-panel">
+      <div class="panel-header">
+        <h2>Single Image Prediction</h2>
+        <p>Upload an image and use a trained `.h5` model. Blank fields use the project defaults.</p>
+      </div>
+      <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data" class="tool-grid">
+        <label class="file-control">
+          <span>Image</span>
+          <input name="image" type="file" accept="image/*" required>
+        </label>
+        <label>
+          <span>Model path</span>
+          <input name="predict_model_path" type="text" placeholder="{{ defaults.model_path }}">
+        </label>
+        <label>
+          <span>Image size</span>
+          <input name="predict_image_size" type="number" min="32" step="1" placeholder="{{ defaults.image_size }}">
+        </label>
+        <button type="submit">Run Prediction</button>
+      </form>
+
+      {% if prediction %}
+        <div class="result-card">
+          <span>{{ prediction.image_name }}</span>
+          <strong>{{ prediction.class_name }}</strong>
+          <p>Confidence: {{ prediction.confidence }}</p>
+        </div>
+      {% endif %}
+    </section>
+
+    <section class="panel" id="train-panel">
+      <div class="panel-header">
+        <h2>Train Model</h2>
+        <p>Choose the training arguments you need. Empty numeric/path fields fall back to defaults.</p>
+      </div>
+      <form action="{{ url_for('train') }}" method="post" class="tool-grid dense">
+        <label>
+          <span>Dataset directory</span>
+          <input name="dataset_dir" type="text" placeholder="{{ defaults.dataset_dir }}">
+        </label>
+        <label>
+          <span>Epochs</span>
+          <input name="epochs" type="number" min="1" step="1" placeholder="{{ defaults.epochs }}">
+        </label>
+        <label>
+          <span>Batch size</span>
+          <input name="batch_size" type="number" min="1" step="1" placeholder="{{ defaults.batch_size }}">
+        </label>
+        <label>
+          <span>Learning rate</span>
+          <input name="learning_rate" type="number" min="0.000001" step="0.000001" placeholder="{{ defaults.learning_rate }}">
+        </label>
+        <label>
+          <span>Image size</span>
+          <input name="image_size" type="number" min="32" step="1" placeholder="{{ defaults.image_size }}">
+        </label>
+        <label>
+          <span>Resume from</span>
+          <select name="resume_from">
+            <option value="none">none</option>
+            <option value="best">best</option>
+            <option value="last">last</option>
+          </select>
+        </label>
+        <label>
+          <span>Workers</span>
+          <input name="workers" type="number" min="1" step="1" placeholder="{{ defaults.workers }}">
+        </label>
+        <label>
+          <span>Max queue size</span>
+          <input name="max_queue_size" type="number" min="1" step="1" placeholder="{{ defaults.max_queue_size }}">
+        </label>
+        <label class="checkbox-control">
+          <input name="use_multiprocessing" type="checkbox">
+          <span>Use multiprocessing</span>
+        </label>
+        <button type="submit">Start Training</button>
+      </form>
+      <pre class="log-box" data-status-url="{{ url_for('status', run_name='train') }}">{{ training.log if training else '' }}</pre>
+    </section>
+
+    <section class="panel" id="evaluate-panel">
+      <div class="panel-header">
+        <h2>Evaluate Checkpoint</h2>
+        <p>Evaluate the saved model on the test split created during training.</p>
+      </div>
+      <form action="{{ url_for('evaluate') }}" method="post" class="tool-grid">
+        <label>
+          <span>Model path</span>
+          <input name="evaluate_model_path" type="text" placeholder="{{ defaults.model_path }}">
+        </label>
+        <label>
+          <span>Batch size</span>
+          <input name="evaluate_batch_size" type="number" min="1" step="1" placeholder="{{ defaults.batch_size }}">
+        </label>
+        <label>
+          <span>Image size</span>
+          <input name="evaluate_image_size" type="number" min="32" step="1" placeholder="{{ defaults.image_size }}">
+        </label>
+        <button type="submit">Start Evaluation</button>
+      </form>
+      <pre class="log-box" data-status-url="{{ url_for('status', run_name='evaluate') }}">{{ evaluation.log if evaluation else '' }}</pre>
+      <section class="evaluation-results" id="evaluation-results" hidden>
+        <div class="panel-header compact">
+          <h2>Evaluation Report</h2>
+          <p>The latest `models/evaluation_report.txt` and confusion matrix generated by `src.evaluate`.</p>
+        </div>
+        <div class="metric-grid" id="evaluation-summary"></div>
+        <div class="report-layout">
+          <figure class="confusion-figure">
+            <img id="confusion-matrix-image" alt="Confusion matrix heatmap">
+            <figcaption>Confusion matrix heatmap</figcaption>
+          </figure>
+          <pre class="evaluation-report-text" id="evaluation-report-text"></pre>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    window.initialPanel = "{{ active_panel | default('predict') }}";
+  </script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

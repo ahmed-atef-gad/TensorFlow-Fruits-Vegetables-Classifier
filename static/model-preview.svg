@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Model prediction preview">
+  <rect width="640" height="420" rx="32" fill="#f7efe5"/>
+  <rect x="48" y="52" width="544" height="316" rx="24" fill="#fffaf3" stroke="#20252a" stroke-width="4"/>
+  <circle cx="178" cy="203" r="76" fill="#f25f4c"/>
+  <path d="M169 128c22-28 53-37 83-28-14 30-43 45-83 28z" fill="#2f8f5b"/>
+  <path d="M145 189c18-22 47-26 72-11 24 15 36 44 27 71-14 39-67 44-96 23-28-20-31-57-3-83z" fill="#f47c5b"/>
+  <circle cx="160" cy="195" r="9" fill="#ffd7bf"/>
+  <rect x="320" y="116" width="196" height="28" rx="14" fill="#20252a"/>
+  <rect x="320" y="166" width="236" height="18" rx="9" fill="#e1d2bf"/>
+  <rect x="320" y="202" width="186" height="18" rx="9" fill="#e1d2bf"/>
+  <rect x="320" y="268" width="160" height="48" rx="14" fill="#2f8f5b"/>
+  <path d="M102 333h438" stroke="#20252a" stroke-width="4" stroke-linecap="round"/>
+</svg>
